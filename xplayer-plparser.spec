@@ -25,6 +25,7 @@ BuildRequires:  pkgconfig(libarchive) >= 3.0
 BuildRequires:  pkgconfig(libquvi-0.9) >= 0.9.1
 BuildRequires:  pkgconfig(libsoup-2.4) >= 2.43.0
 BuildRequires:  pkgconfig(libxml-2.0)
+BuildRequires:  pkgconfig(gtk-doc)
 Requires:       libquvi-scripts
 
 %description
