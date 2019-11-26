@@ -8,7 +8,7 @@
 
 Name:           xplayer-plparser
 Version:        1.0.2
-Release:        %mkrel 2
+Release:        1
 Summary:        Simple GObject-based library to parse playlist formats
 License:        LGPL-2.0+
 Group:          System/Libraries
@@ -86,7 +86,7 @@ NOCONFIGURE=1 gnome-autogen.sh
   --disable-static                     \
   --libexecdir=%{_libexecdir}/%{name}/ \
   --enable-quvi
-%make
+%make_build
 
 %install
 %make_install
