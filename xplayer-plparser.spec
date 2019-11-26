@@ -15,6 +15,7 @@ Group:          System/Libraries
 Url:            https://github.com/linuxmint/xplayer-plparser
 Source:         https://github.com/linuxmint/%{name}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source1:        baselibs.conf
+BuildRequires:  intltool
 BuildRequires:  gnome-common
 BuildRequires:  libgcrypt-devel
 BuildRequires:  pkgconfig(glib-2.0) >= 2.31.0
