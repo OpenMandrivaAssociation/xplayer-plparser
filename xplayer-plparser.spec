@@ -17,7 +17,7 @@ Source:         https://github.com/linuxmint/%{name}/archive/%{version}.tar.gz#/
 Source1:        baselibs.conf
 BuildRequires:  intltool
 BuildRequires:  gnome-common
-BuildRequires:  libgcrypt-devel
+BuildRequires:  pkgconfig(libgcrypt)
 BuildRequires:  pkgconfig(glib-2.0) >= 2.31.0
 BuildRequires:  pkgconfig(gmime-2.6)
 BuildRequires:  pkgconfig(gobject-introspection-1.0)
