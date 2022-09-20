@@ -19,7 +19,7 @@ BuildRequires:  meson
 BuildRequires:  gnome-common
 BuildRequires:  pkgconfig(libgcrypt)
 BuildRequires:  pkgconfig(glib-2.0) >= 2.31.0
-BuildRequires:  pkgconfig(gmime-2.6)
+BuildRequires:  pkgconfig(gmime-3.0)
 BuildRequires:  pkgconfig(gobject-introspection-1.0)
 BuildRequires:  pkgconfig(libarchive) >= 3.0
 BuildRequires:  pkgconfig(libquvi-0.9) >= 0.9.1
