@@ -7,15 +7,15 @@
 %define girname		%mklibname %{name}-gir %{gi_major}
 
 Name:           xplayer-plparser
-Version:        1.0.2
-Release:        2
+Version:        1.0.3
+Release:        1
 Summary:        Simple GObject-based library to parse playlist formats
 License:        LGPL-2.0+
 Group:          System/Libraries
 Url:            https://github.com/linuxmint/xplayer-plparser
 Source:         https://github.com/linuxmint/%{name}/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source1:        baselibs.conf
-BuildRequires:  intltool
+BuildRequires:  meson
 BuildRequires:  gnome-common
 BuildRequires:  pkgconfig(libgcrypt)
 BuildRequires:  pkgconfig(glib-2.0) >= 2.31.0
@@ -82,16 +82,12 @@ of playlist formats, to save them too.
 %autosetup -p1
 
 %build
-NOCONFIGURE=1 gnome-autogen.sh
-
-%configure \
-  --disable-static                     \
-  --libexecdir=%{_libexecdir}/%{name}/ \
-  --enable-quvi
-%make_build
+%meson \
+        -Denable-quvi=yes
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 find %{buildroot} -type f -name "*.la" -delete -print
 %find_lang %{_name}
