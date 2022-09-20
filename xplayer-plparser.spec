@@ -94,7 +94,7 @@ find %{buildroot} -type f -name "*.la" -delete -print
 
 %files  -f %{_name}.lang
 %doc COPYING.LIB README debian/changelog
-#dir %{_libexecdir}/%{name}/
+%{_prefix}/libexec/xplayer-pl-parser-videosite
 #{_libexecdir}/%{name}/xplayer-pl-parser-videosite
 
 %files -n %{libname}
