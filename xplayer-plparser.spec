@@ -8,7 +8,7 @@
 
 Name:           xplayer-plparser
 Version:        1.0.3
-Release:        3
+Release:        4
 Summary:        Simple GObject-based library to parse playlist formats
 License:        LGPL-2.0+
 Group:          System/Libraries
