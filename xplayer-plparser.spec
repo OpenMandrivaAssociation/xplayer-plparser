@@ -8,7 +8,7 @@
 
 Name:           xplayer-plparser
 Version:        1.0.3
-Release:        4
+Release:        5
 Summary:        Simple GObject-based library to parse playlist formats
 License:        LGPL-2.0+
 Group:          System/Libraries
@@ -26,7 +26,6 @@ BuildRequires:  pkgconfig(libquvi-0.9) >= 0.9.1
 BuildRequires:  pkgconfig(libsoup-2.4) >= 2.43.0
 BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:  pkgconfig(gtk-doc)
-Requires:       libquvi-scripts
 
 %description
 xplayer-plparser is a simple GObject-based library to parse a host
